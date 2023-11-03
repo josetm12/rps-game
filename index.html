@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RPS</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <header class="logo">Rock Paper Scissors (TOP)</header>
+    <main>
+      <div class="game">
+        <div class="result-screen">
+          <div class="last-played">
+            <span class="tile-label">Com Last</span>
+            <div id="com-last" class="tile">?</div>
+            <span class="tile-label">1P Last</span>
+            <div id="p-last" class="tile">?</div>
+          </div>
+          <div class="game-info">
+            <div id="winner-text">Game On !</div>
+            <div id="turns-text">5 round(s) left</div>
+            <div id="stats">Player: 0 || Computer: 0</div>
+            <button id="replay-btn">Replay</button>
+          </div>
+        </div>
+        <div class="input-screen">
+          <div class="tile input" data-play="r">Rock</div>
+          <div class="tile input" data-play="p">Paper</div>
+          <div class="tile input" data-play="s">Scissors</div>
+          <div class="help-text">Click on any of the Input Buttons</div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <span>Copyright &copy; The Odin Project 2023</span>
+    </footer>
+    <script type="text/javascript" src="./js/main.js"></script>
+  </body>
+</html>

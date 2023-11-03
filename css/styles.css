@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  background-color: #1f2937;
+  color: #e5e7eb;
+}
+
+main {
+  background-color: #fff;
+  color: #000;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+header,
+footer {
+  height: 3rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+footer > span {
+  font-size: 14px;
+}
+
+.logo {
+  color: #f9faf8;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.game {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main > .game > * {
+  border: 1px dashed blue;
+  flex: 1;
+  width: 100%;
+}
+
+.tile {
+  height: 5rem;
+  width: 5rem;
+  border: 1px solid #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
+}
+
+.input-screen,
+.result-screen {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: space-around;
+  text-align: center;
+  align-items: center;
+}
+
+.result-screen > * {
+  height: 100%;
+}
+
+.last-played {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.last-played > * {
+  margin: 10px;
+}
+
+.game-info {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.tile.input {
+  cursor: pointer;
+  transition: all 500ms;
+}
+
+.tile.input:hover {
+  background-color: #1f2937;
+  color: white;
+}
+
+.help-text {
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+
+button {
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 1rem;
+  font-size: 16px;
+  cursor: pointer;
+}
